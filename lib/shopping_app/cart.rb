@@ -33,7 +33,7 @@ class Cart
 
   #   - カートの中身（Cart#items）のすべてのアイテムのオーナー権限が、カートのオーナーに移されること。
     @items.each do |item|
-      item.owner = owner
+      item.owner = self.owner
     end
 
   #   - カートの中身（Cart#items）が空になること。
